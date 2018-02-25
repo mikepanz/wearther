@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600|Slabo+27px|Raleway|Pacifico');
+
+/* 	Skeleton Responsive CSS Boilerplate via http://getskeleton.com/  */
+
+html {
+	max-width: 100%;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	min-height: 101vh;
+}
+
+#index-body {
+	background: rgb(24, 224, 217); 
+	/* gradient code from https://www.w3schools.com/css/css3_gradients.asp (I know you don't like W3 Schools; sorry) */
+	  background: -webkit-linear-gradient(left top, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(to bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* Standard syntax */
+
+}
+
+header{
+	background-color: black;
+
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.25em;
+
+	text-align: center;
+	text-transform: uppercase;
+
+	padding: 1%;
+	margin: 0;
+}
+
+header h1 a{
+	color: white;
+}
+
+.title_pic {
+	width: 100%;
+
+	  
+	  padding: 0 0 2%;
+}
+
+
+.title_text {
+	font-family: 'Pacifico', cursive;
+    font-size: 3em;
+	color: white;
+
+	text-shadow: 0 0 4px black;
+	text-align: center;
+
+	width: 100%;
+
+	padding: 14% 0;
+	margin: auto;
+
+}
+
+.button, button {
+	background-color: rgb(176, 239, 40);
+
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+
+	text-align: center;
+	text-transform: uppercase;
+    text-decoration: none;
+
+    border: none;
+    padding: 0 3%;
+    margin: auto;
+    display: block;
+	box-shadow: 0 0 6px .25px white;
+}
+
+
+ .button p a, a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.selections {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.5em;
+	
+	text-transform: uppercase;
+}
+
+h3.selections {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+
+input, label{
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.25em;
+
+	text-transform: capitalize;
+}
+
+/*styling form page*/
+
+.parts{
+	display: flex;
+	flex-direction: column;
+	/* gradient code from https://www.w3schools.com/css/css3_gradients.asp (I know you don't like W3 Schools; sorry) */
+	background: rgb(24, 224, 217); /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left top, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* Standard syntax */
+		padding: 2.5% 0;
+		margin: 2% 2% 1%;		
+}
+
+#part1, #part2, #part3{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		padding: 3% 1.5% 3% 10%;
+	}
+
+@media screen and (min-width: 750px){
+
+	.parts{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+
+	/* gradient code from https://www.w3schools.com/css/css3_gradients.asp (I know you don't like W3 Schools; sorry) */
+		background: rgb(24, 224, 217); /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left top, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, rgb(24, 224, 217), rgb(52, 237, 166)); /* Standard syntax */
+
+		padding: 2% 0;
+		margin: 2% 2% 1%;
+	}
+
+	#part1, #part2, #part3{
+		display: flex;
+		flex-direction: column;
+		padding: 1.5% 1%;
+	}
+}
+
+
+
+.hide{
+	display: none;
+}
+
+#js-city{
+
+	color: black;
+	font-family: 'Slabo 27px', serif;
+	font-size: 4vw;
+	font-weight: bold;
+
+	text-transform: uppercase;
+}
+
+#js-desc{
+
+	color: black;
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5em;
+	font-style: italic;
+
+	text-transform: lowercase;
+}
+
+#wc {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+	#wc,
+	#js-desc {
+		font-size: 1em;
+	}
+}
+
+#js-unit,
+#js-temp{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 4.25em;
+	font-weight: bold;	
+}
+
+@media screen and (min-width: 1800px) {
+	#wc,
+	#js-desc {
+		font-size: 2.75em;
+	}
+	#js-unit,
+	#js-temp {
+		font-size: 6em;
+	}
+
+}
+
+
+#js-reason {
+	font-family: 'Slabo 27px', serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgb(24, 224, 217);
+	margin: 0;
+	background-color: #f8f8f8;
+}
+
+
+@media screen and (max-width: 800px){
+	#js-reason{
+		width: 40%;
+		font-size: 4vw;
+	}
+}
+
+@media screen and (max-width: 800px){
+	#weather-text{
+		width: 60%;
+	}
+}
+
+#form{
+	margin: 5%;
+}
+
+/*styling form aspects*/
+
+#outfit_display{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 3%;
+	align-items: center;
+}
+
+#empty{
+	width: 38%;
+	padding: 3% 0 3% 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+	#empty{
+		flex-direction: row;
+		width: 90%;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+.outfit_container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+}
+
+@media screen and (max-width: 800px){
+	.outfit_container{
+		flex-direction: row;
+	}
+	#outfit_display {
+		flex-direction: column;
+	}
+}
+
+.outfit_container img{
+	padding: 0;
+	margin: 0;
+	width: 45%;
+}
+
+@media screen and (max-width: 800px) {
+	.outfit_container img{
+		width: 100%;
+	}
+}
+
+#js-btn, #again{
+	margin: 2% auto;
+}
+
+@media screen and (min-width: 1038px) {
+	.title_text {
+			padding: 10% 0;
+	}
+}
+
+@media screen and (max-height: 590px) {
+	.title_text {
+			padding: 10% 0;
+	}
+}
+
+
+footer{
+	position: static;
+	bottom: 0;
+	background: black;
+	width: 100%;
+	text-align: center;
+	padding: 1% 0;
+	margin: 0;
+}
+
+#index-footer {
+	position: fixed;
+}
+#form-footer {
+	position: fixed;
+}
+
+footer a{
+	color: rgb(58, 58, 58);
+
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.25em;
+	font-weight: lighter;
+
+	text-transform: uppercase;
+
+	margin: 5%;
+}
+
+@media screen and (max-width: 800px){
+	footer a{
+		font-size: 1em;
+		margin: 3%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	footer a{
+		font-size: .75em;
+	}
+}
+/*styling the input button*/
+input[type=radio] {
+    display:none; 
+}
+input[type=radio] + label {
+	display:inline-block;
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+}
+input[type=radio]:checked + label { 
+    background-color:#aaa;
+}
+
+div#container {
+	margin: 2vw 1vh 0 1vh;
+}
+
+p {
+	margin: 1vw 0;
+}
+
+form {
+	margin: auto;
+}
+
+
+/*form switch styling from (https://codepen.io/wilsonpage/pen/cxKEs)*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	display: none;
+}
+
+label[for=switch] {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label[for=switch]:after {
+	content: '';
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+input[type=checkbox]:checked + label {
+	background: rgb(176, 239, 40);
+}
+
+input[type=checkbox]:checked + label:after {
+	left: calc(100% - 2.5px);
+	transform: translateX(-100%);
+}
+
+label[for=switch]:active:after {
+	width: 20px;
+}
+
+#js-zip {
+	margin: 1vh 0 0;
+}
+
+.outfit_container div p {
+	display: inline;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: left;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+	float: right;
+}
+figure {
+	width: auto;
+	max-width: 402px;
+	margin: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	figure {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+figure:hover img{
+	opacity: .80
+}
+
+figure:hover p {
+	opacity: 1;
+}
+
+#js-loading {
+	position: absolute;
+	z-index: -2;
+	width: 30%;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+	transition: .2s ease;
+}
+
+@media screen and (max-width: 900px){
+	#explain{
+		color: black;
+		font-size: .75em;
+}
+}
+
+#explain{
+	background-color: rgba(10, 70, 60, .15);
+	top:0;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5vw;
+	text-align: center;
+	margin: 0 auto;
+}
+

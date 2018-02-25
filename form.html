@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Wearther Home Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/skeleton.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		
+	</head>
+	
+	<body>
+		<header>
+		  <h1 id="top_h"><a href="index.html">[wear]ther</a></h1>
+		</header>
+
+		<div id="container">
+			<div class="parts">
+				<div id="part1">
+					<div>
+						<h3 class="selections">Use geolocation?</h3>
+							<input type="checkbox" id="switch"><label for="switch">Toggle</label>
+
+					<div>
+						<input type="text" placeholder="enter zip code or city" id="js-zip">
+						<p id="js-zip-p">(Zipcodes must be in the U.S.)</p>
+					</div>
+					</div>
+				</div>
+
+				<div id="part2">
+					<div>
+						<h2 class="selections">Select your units: </h2>
+
+						<input type="radio" name="unit" id="js-c" value="C" checked>
+						<label for="js-c">°C</label>
+						<input type="radio" name="unit" id="js-f" value="F">
+						<label for="js-f">°F</label>
+					</div>
+				</div>
+
+				<div id="part3">
+					<div>
+						<h2 class="selections">Choose your gender style: </h2>
+
+						<input type="radio" name="gender" value="male" id="boy" checked>
+						<label for="boy">Men's</label>
+						<input type="radio" name="gender" value="female" id="girl">
+						<label for="girl">Women's</label>
+						<input type="radio" name="gender" value="neutral" id="none">
+						<label for="none">Neutral</label>
+					</div>
+			 	 </div>
+			</div>
+				<button id="js-btn" >Generate Outfit</button>
+		</div>
+
+	<div id="outfit_display">
+		<div id="empty" class="hide">
+			<div id="weather-text"><p><span id="js-city"></span></p>
+	    		<p><span id="js-temp"></span><span id="js-unit"></span>
+	    		<img src="" alt="" id="js-icon"></p>
+	    		<p><span id="wc" class="hide">Weather Condition: </span>
+	    		<span class="temperature" id="js-desc"></span></p>
+	    	</div>
+
+	    		<p id="js-reason"></p>
+	    </div>
+
+		<div class="outfit_container">
+
+			<div id="f_tank" class="hide">
+				<figure><img src="images/f_tank.png" alt="f_tank">
+					
+					<p class="text">Tank Top</p></figure>
+			</div>
+			
+			<div id="f_tshirt" class="hide"><figure><img src="images/f_tshirt.png" alt="f_tshirt">
+					
+					<p class="text">T-shirt</p></figure>
+			</div>
+			<div id="f_c_dress" class="hide"><figure><img src="images/f_c_dress.png" alt="f_c_dress">
+					<p class="text">Sun Dress</p></figure>
+			</div>	
+			<div id="f_cardigan" class="hide"><figure><img src="images/f_cardigan.png" alt="f_cardigan">
+					<p class="text">Sweater</p></figure>
+			</div>
+			<div id="f_jean_jacket" class="hide"><figure><img src="images/f_jean_jacket.png" alt="f_jean_jacket">
+					<p class="text">Light-weight Jacket</p></figure>
+			</div>
+			<div id="f_peacoat" class="hide"><figure><img src="images/f_peacoat.png" alt="f_peacoat">
+					<p class="text">Medium-weight Coat</p></figure>
+			</div>
+			<div id="f_winter_coat" class="hide"><figure><img src="images/f_winter_coat.png" alt="f_winter_coat">
+					<p class="text">Heavy Winter Coat</p></figure>
+			</div>
+
+			<div id="f_shorts" class="hide"><figure><img src="images/f_shorts.png" alt="f_shorts">
+					<p class="text">Shorts</p></figure>
+			</div>
+			<div id="f_skirt" class="hide"><figure><img src="images/f_c_skirt.png" alt="f_skirt">
+					<p class="text">Skirt</p></figure>
+			</div>
+			<div id="f_light_jeans" class="hide"><figure><img src="images/f_light_jeans.png" alt="f_light_jeans">
+					<p class="text">Light-wash Jeans</p></figure>
+			</div>
+			<div id="f_leggings" class="hide"><figure><img src="images/f_leggings.png" alt="f_leggings">
+					<p class="text">Leggings</p></figure>
+
+			</div>
+			<div id="f_dark_jeans" class="hide"><figure><img src="images/f_dark_jeans.png" alt="f_dark_jeans">
+					<p class="text">Dark-wash Jeans</p></figure>
+			</div>
+			<div id="f_fleece_leggings" class="hide"><figure><img src="images/f_fleece_leggings.png" alt="fleece_leggings">
+					<p class="text">Thick Leggings</p></figure>
+			</div>
+
+			<div id="m_tank" class="hide"><figure><img src="images/m_tank.png" alt="m_tank">
+					<p class="text">Muscle Tank</p></figure>
+			</div>
+			<div id="m_tshirt" class="hide"><figure><img src="images/m_tshirt.png" alt="m_tshirt">
+					<p class="text">T-shirt</p></figure>
+			</div>
+			<div id="m_polo" class="hide"><figure><img src="images/m_polo.png" alt="m_polo">
+					<p class="text">Polo Shirt</p></figure>
+			</div>
+			<div id="m_baseball_t" class="hide"><figure><img src="images/m_baseball_t.png" alt="m_baseball_t">
+					<p class="text">Long-sleeve Shirt</p></figure>
+			</div>
+			<div id="m_cardigan" class="hide"><figure><img src="images/m_cardigan.png" alt="m_cardigan">
+					<p class="text">Sweater</p></figure>
+			</div>
+			<div id="m_peacoat" class="hide"><figure><img src="images/m_peacoat.png" alt="m_peacoat"><p class="text">Medium-weight coat</p>
+					</figure>
+			</div>
+			<div id="m_winter_coat" class="hide"><figure><img src="images/m_winter_coat.png" alt="m_winter_coat">
+					<p class="text">Heavy Winter Coat</p></figure>
+			</div>
+
+			<div id="m_board_shorts" class="hide"><figure><img src="images/m_board_shorts.png" alt="m_board_shorts">
+					<p class="text">Board Shorts</p></figure>
+			</div>
+			<div id="m_cutoffs" class="hide"><figure><img src="images/m_cutoffs.png" alt="m_cutoffs">
+					<p class="text">Cuttoff Shorts</p></figure>
+			</div>
+			<div id="m_cuffed_khakis" class="hide"><figure><img src="images/m_cuffed_khakis.png" alt="m_cuffed_khakis">
+					<p class="text">Cuffed Khakis or Pants</p></figure>
+			</div>
+			<div id="m_light_jeans" class="hide"><figure><img src="images/m_light_jeans.png" alt="m_light_jeans">
+					<p class="text">Light-wash Jeans</p></figure>
+			</div>
+			<div id="m_sweatpants" class="hide"><figure><img src="images/m_sweatpants.png" alt="m_sweatpants">
+					<p class="text">Sweatpants</p></figure>
+			</div>
+			<div id="m_khakis" class="hide"><figure><img src="images/m_khakis.png" alt="m_khakis">
+					<p class="text">Khakis or Pants</p></figure>
+			</div>
+			<div id="m_dark_jeans" class="hide"><figure><img src="images/m_dark_jeans.png" alt="m_dark_jeans">
+					<p class="text">Dark-wash Jeans</p></figure>
+			</div>
+
+			<div id="f_flip_flops" class="hide"><figure><img src="images/f_flip_flops.png" alt="shoes">
+					<p class="text">Flip-Flops</p></figure>
+			</div>
+			<div id="f_sandals" class="hide"><figure><img src="images/f_sandals.png" alt="shoes">
+					<p class="text">Sandals</p></figure>	
+			</div>
+			<div id="f_flats" class="hide"><figure><img src="images/f_flats.png" alt="shoes">
+					<p class="text">Flats</p></figure>
+			</div>
+			<div id="f_sneakers" class="hide"><figure><img src="images/f_sneakers.png" alt="shoes">
+					<p class="text">Sneakers</p></figure>	
+			</div>
+			<div id="f_riding_boots" class="hide"><figure><img src="images/f_riding_boots.png" alt="shoes">
+					<p class="text">Riding Boots</p></figure>	
+			</div>
+			<div id="f_combat_boots" class="hide"><figure><img src="images/f_combat_boots.png" alt="shoes">
+					<p class="text">Combat Boots</p></figure>	
+			</div>
+			<div id="f_snow_boots" class="hide"><figure><img src="images/f_snow_boots.png" alt="shoes">
+					<p class="text">Snow Boots</p></figure>					
+			</div>
+
+			<div id="m_flip_flops" class="hide"><figure><img src="images/m_flip_flops.png" alt="shoes">
+				<p class="text">Flip-Flops</p></figure>
+			</div>
+			<div id="m_high_tops" class="hide"><figure><img src="images/m_high_tops.png" alt="shoes">
+					<p class="text">High-Tops</p></figure>	
+			</div>
+			<div id="m_running_shoes" class="hide"><figure><img src="images/m_running_shoes.png" alt="shoes">
+					<p class="text">Running Shoes</p></figure>
+			</div>
+			<div id="m_sneakers" class="hide"><figure><img src="images/m_sneakers.png" alt="shoes">
+					<p class="text">Sneakers</p></figure>	
+			</div>
+			<div id="m_boots" class="hide"><figure><img src="images/m_boots.png" alt="shoes">
+					<p class="text">Boots</p></figure>	
+			</div>
+			<div id="m_snow_boots" class="hide"><figure><img src="images/m_snow_boots.png" alt="shoes">
+					<p class="text">Snow Boots</p></figure>	
+			</div>
+		</div>
+	</div>
+
+		<div>
+			<button id="again" class="hide" onClick="window.location.reload()">Back</button>
+		</div>
+
+		<footer id="form-footer">
+			<a href="documents/proposal.pdf">proposal</a>
+		    <a href="documents/wireframe.pdf">wireframe</a>
+			<a href="https://drive.google.com/drive/folders/1A6fXsRjj33_wwONh6yJ0CP6Ney2Kdh-D?usp=sharing">prototypes</a>
+		  	<a href="documents/ux_report.pdf">UX report</a>		
+		  </footer>
+		
+<!-- (shoe icons sourced from Google images); all other outfit icons are original designs -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+	</body>
+</html>
